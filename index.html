@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello Code</title>
+</head>
+<body>
+  <label for="name">Emter your name:</label>
+  <input type="text" id="name" />
+  <button id="helloBTN">ENTER</button>
+
+  <p id="hello"></p>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var button = document.getElementById("helloBTN");
+      button.addEventListener("click", function() {
+        var name = document.getElementById("name").value;
+        var hello = "Hello " + name + " :)";
+        document.getElementById("hello").textContent = hello;
+      });
+    });
+  </script>
+</body>
+</html>
